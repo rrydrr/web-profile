@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;500;700&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Signika Negative', sans-serif;    
+}
+
+body{
+    background-image: url(https://storage.googleapis.com/nomadic-sprite-404303.appspot.com/6020105.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-weight: 700;
+}
+
+img.rounded {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+aside{
+    width: 27%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.profile{
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 0 30px 0 30px;
+    margin-top: 10px;
+}
+
+.profile-header{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.profile-header img{
+    margin-top: 20px;
+}
+
+.profile-header h1{
+    margin: 5px;
+    font-size: 1.2rem;
+}
+
+.profile-header h2{
+    margin-top: 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.profile-section h3{
+    margin: 0;
+}
+
+.profile-section table{
+    border-collapse:separate; 
+    border-spacing: 0.5rem 1rem;
+}
+
+.profile-section th{
+    text-align: right;
+    font-weight: 500;
+}
+
+.profile-section td a{
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    transition: all 0.1s ease-in-out;
+}
+
+.profile-section td a:hover{
+    font-weight: 700;
+}
+
+main{
+    max-width: 1300px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+}
+
+.content{
+    width: 73%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.content .content-description{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 0 30px 0 30px;
+    margin-top: 10px;
+}
+
+.content .content-description .title{
+    font-size: 1.5rem;
+    margin-block: 1.5rem;
+    margin-bottom: 0;
+}
+
+.content .content-description table {
+    border-collapse:separate; 
+    border-spacing: 2rem 1rem;
+}
+
+.content .content-description th {
+    text-align: right;
+}
+.content .content-description td {
+    font-weight: 300;
+}
+
+.content .content-description .subtable{
+    border-spacing: 0 0;
+}
+
+.content .content-description .subtable h2{
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.content .content-description .subtable h3{
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.content .content-description .skills {
+    width: 100%;
+}
+
+.content .content-description .skills th {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 10px 0px 10px;
+    color: black;
+    background-color: white;
+}
+
+footer h2{
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1150px) {    
+    main{
+        flex-flow: column;
+    }
+
+    .content, aside{
+        max-width: auto;
+        width: 100%;
+        padding: 10px;
+    }
+}
